@@ -106,7 +106,7 @@ const Login = () => {
 
 const Home = () => {
   return (
-    <Box p={4}>
+    <Box p={4} textAlign="center">
       <VStack spacing={4} align="flex-start">
         <Heading size="2xl">Welcome to SaaS Friend ✨</Heading>
         <Text fontSize="lg">The friendly SaaS platform that helps you succeed. Join us and get the tools you need to thrive!</Text>
@@ -115,7 +115,7 @@ const Home = () => {
         </Text>
         <Button colorScheme="teal">Get Started</Button>
       </VStack>
-      <Image src="https://images.unsplash.com/photo-1542596594-649edbc13630?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHBlb3BsZXxlbnwwfHx8fDE3MDkxNDIzODl8MA&ixlib=rb-4.0.3&q=80&w=1080" />
+      <Image src="https://images.unsplash.com/photo-1542596594-649edbc13630?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHBlb3BsZXxlbnwwfHx8fDE3MDkxNDIzODl8MA&ixlib=rb-4.0.3&q=80&w=1080" boxSize="100px" m="0 auto" />
     </Box>
   );
 };
