@@ -131,20 +131,18 @@ const Home = () => {
 const Index = () => {
   return (
     <ChakraProvider theme={theme}>
-      <Router>
-        <Box textAlign="center" fontSize="xl">
-          <Header />
-          <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/tools" element={<Tools />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/" element={<Home />} />
-          </Routes>
-          <Footer />
-        </Box>
-      </Router>
+      <Box textAlign="center" fontSize="xl">
+        <Header />
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/tools" element={<Tools />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </Box>
     </ChakraProvider>
   );
 };
