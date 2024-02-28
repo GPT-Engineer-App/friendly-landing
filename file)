@@ -1,0 +1,11 @@
+import { Box, Text } from "@chakra-ui/react";
+
+const Pricing = () => {
+  return (
+    <Box p={4}>
+      <Text fontSize="lg">Discover our competitive pricing plans tailored to suit businesses of all sizes. Choose the plan that's right for you and get started on your journey with SaaS Friend today.</Text>
+    </Box>
+  );
+};
+
+export default Pricing;

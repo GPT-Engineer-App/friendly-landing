@@ -20,14 +20,14 @@ const Header = () => {
             </Heading>
           </Box>
           <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
-            <NavLink to="/about">
-              <Link color={color}>About</Link>
+            <NavLink to="/about" style={({ isActive }) => ({ color: isActive ? "white" : color })}>
+              About
             </NavLink>
-            <NavLink to="/tools">
-              <Link color={color}>Tools</Link>
+            <NavLink to="/tools" style={({ isActive }) => ({ color: isActive ? "white" : color })}>
+              Tools
             </NavLink>
-            <NavLink to="/pricing">
-              <Link color={color}>Pricing</Link>
+            <NavLink to="/pricing" style={({ isActive }) => ({ color: isActive ? "white" : color })}>
+              Pricing
             </NavLink>
           </HStack>
         </HStack>
