@@ -1,17 +1,9 @@
-import { ChakraProvider, Box, Flex, Text, Button, Heading, Link, VStack, Input, useColorMode, useColorModeValue, HStack, IconButton, Image, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, Box, Flex, Text, Button, Heading, Link, VStack, Input, useColorMode, useColorModeValue, HStack, IconButton, Image } from "@chakra-ui/react";
 import { FaSun, FaMoon, FaGoogle, FaEtsy, FaSignInAlt, FaUserPlus } from "react-icons/fa";
 import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import { useState } from "react";
 
-const theme = extendTheme({
-  styles: {
-    global: {
-      body: {
-        bg: useColorModeValue("teal.200", "teal.700"),
-      },
-    },
-  },
-});
+// The theme object has been removed as it is not needed and was causing the error
 
 const Header = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -130,7 +122,7 @@ const Home = () => {
 
 const Index = () => {
   return (
-    <ChakraProvider theme={theme}>
+    <>
       <Box textAlign="center" fontSize="xl">
         <Header />
         <Routes>
@@ -143,7 +135,7 @@ const Index = () => {
         </Routes>
         <Footer />
       </Box>
-    </ChakraProvider>
+    </>
   );
 };
 
